@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link rel="stylesheet" href="items/bootstrap.min.css">
+    <link rel="stylesheet" href="items/style.css">
+    <link rel="shortcut icon" href="items/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="items/fontawesome-free-6.1.1-web/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محيط ومساحة الدائرة</title>
+</head>
+<body class="">
+    <div class="navi">
+        <a id="mp" class="mp" href="#"></a>
+    </div>
+    <form class="clca">
+        <div id="error" style="display: none;">
+        </div>
+        <label for="num" class="text">محيط ومساحة الدائرة</label>
+        <input name="num" placeholder="نصف القطر (نق)" type="number" id="num" class="num form-control">
+        <div class="ch">
+            <label for="check">عدد عشري</label>
+            <input type="checkbox" name="check" id="check" spellcheck="auto" class="check">
+        </div>
+        <div class="resBtn">
+            <button type="button"id="btn1" class="btn btn-primary"><i class="far fa-circle"></i> محيط الدائرة</button>
+            <button type="button" id="btn2" class="btn btn-secondary"><i class="far fa-circle"></i> مساحة الدائرة</button>
+        </div>
+        <div class="res alert alert-success" id="res" dir="auto"><i class="fa fa-square-check"></i> النتيجة: </div>
+    </form>
+<script src="items/script.js"></script>
+</body>
+</html>

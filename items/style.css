@@ -1,0 +1,140 @@
+@import 'font.css';
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body.dark
+{
+    background-color: var(--dark-bg);
+    --dark-bg: #16191b;
+    --dark-text: white;
+    --mp-color: #092561;
+    --dr-mp-color: #051332;
+}
+
+body.dark ::selection
+{
+    background-color: var(--mp-color);
+}
+
+.navi .mp
+{
+    background-image: url("down.PNG");
+    height: 88px;
+    width: 88px;
+    position: fixed;
+    background-size: cover;
+    transform: translate(-8px, 14px);
+}
+
+a
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 5em;
+}
+
+.clca
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.text
+{
+    font-size: 3.5em;
+}
+
+.num
+{
+    font-size: 2.5em;
+}
+
+.resBtn button
+{
+    font-size: 1.7em;
+    margin-top: 10px;
+    padding: 10px 31px;
+}
+
+.res
+{
+    margin-top: 70px;
+    font-size: 2em;
+}
+
+.ch
+{
+    font-size: 27px;
+    margin-left: 327px;
+    user-select: none;
+}
+
+.ch .check
+{
+    transform: scale(1.9) translateX(4px);
+}
+
+body.dark .clca
+{
+    color: var(--dark-text);
+}
+
+body.dark .num
+{
+    background: none;
+    border: 5px var(--mp-color) solid;
+    color: var(--dark-text);
+}
+
+body.dark .num:focus
+{
+    box-shadow: 0px 0px 9px 6px var(--mp-color);
+}
+
+body.dark .btn
+{
+    background-color: transparent;
+    border: 5px solid var(--mp-color);
+    margin-top: 20px;
+    margin-left: 7px;
+    box-shadow: none;
+}
+
+body.dark .btn:hover
+{
+    background-color: var(--dr-mp-color);
+}
+
+body.dark .ch
+{
+    margin-left: 353px;
+    margin-top: 13px;
+    background: transparent;
+}
+
+body.dark .alert
+{
+    color: var(--dark-text);
+    border: 5px solid var(--mp-color);
+    background-color: var(--dr-mp-color);
+}
+
+body.dark .mp
+{
+    background-image: url("light.png");
+}
